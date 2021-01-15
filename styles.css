@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    font-size: 18px;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 100px;
+    min-width: 400px;
+}
+
+.header {
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input-section {
+    height: 40px;
+    min-width: 400px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+#popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: green;
+    display: none;
+}
+.popup {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+#input {
+    margin: 0;
+    padding: 0;
+}
+
+#add-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(112, 223, 112);
+    color: white;
+    font-size: 18px;
+}
+
+li:nth-child(even) {
+    background-color:  #eee;
+}
+
+li:nth-child(odd) {
+    background-color:   #D3D3D3;
+}
+
+#todo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#todo li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.close-btn {
+    float: right;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    
+}
+
+.close-btn:hover {
+    background-color: #f44336;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.item-new {
+    text-decoration: none;
+}
+
+.item-finished{
+    text-decoration: line-through;
+    background-color: #4b4b4b !important; 
+    color: white;
+    transition-duration: 0.15s;
+}
+
+.task {
+    height: 100%;
+    /* padding: 20px 0; */
+}
+
+/* General use */
+.all-padding {
+    padding: 10px;
+}
+
+.no-display {
+    display: none;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+/* .visible {
+    display: blo;
+} */

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <div id="popup">Hooray! You just finish a task</div> -->
+            <h1 class="margin-bottom">This is a to-do-app</h1>
+            <p class="margin-bottom">What do you want to do today?</p>
+            <div class="input-section">
+                <input id="input" class="all-padding" type="text" placeholder="Enter the task. Ex: Laundring"/>
+                <button id="add-btn" class="all-padding" type="button">Add Todo</button>
+            </div>
+        </div>
+        <div class="to-do-list">
+            <h5 class="margin-bottom">You have <span id="number-of-tasks"></span> task(s)</h5>
+            <div id="menu" class="padding-all">
+                <ul id= "todo"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/6cd9206882.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
